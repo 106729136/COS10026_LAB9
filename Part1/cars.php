@@ -17,7 +17,7 @@ if ($dbconn) {
     $result = mysqli_query($dbconn, $query);
     if ($result) {
         echo "<table border='1'>";
-        echo "<tr><th>Car ID</th><th>Car Name</th><th>Car Model</th><th>Car Price</th></tr>";
+        echo "<tr><th>Car ID</th><th>Make</th><th>Model</th><th>Price</th><th>Year of Manufacture</th></tr>";
         while ($row = mysqli_fetch_assoc($result)) {
             echo "<tr>";
             echo "<td>" . $row['car_id'] . "</td>";

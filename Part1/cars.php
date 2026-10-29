@@ -9,7 +9,7 @@
     <body> 
 
 <?php 
-require_once "settings.php";
+require_once "Settings.php";
 $dbconn = mysqli_connect($host, $user, $pwd, $sql_db);
 if ($dbconn) {
 
